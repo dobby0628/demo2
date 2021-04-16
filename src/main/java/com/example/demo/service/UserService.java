@@ -16,4 +16,15 @@ public interface UserService {
 
         return userEntity;
     }
+/*
+    default UserDTO entityToDto(UserEntity userEntity){
+        UserDTO userDTO = UserDTO.builder()
+                .email(userEntity.getEmail())
+                .password(userEntity.getPassword())
+                .name(userEntity.getName())
+                .build();
+
+        return userDTO;
+    }
+*/
 }
